@@ -28,6 +28,7 @@ class App{
 		const material = new THREE.MeshStandardMaterial ({ color: 0xff0099});
 		this.mesh = new THREE.Mesh (geometry, material);
 		this.scene.add (this.mesh);
+		const controls = newOrbitControls (this.camera,this.renderer.domElement);
 		window.addEventListener('resize', this.resize.bind(this) );
 	
 	}	
