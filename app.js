@@ -3,6 +3,7 @@ import { OrbitControls } from 'jsm/OrbitControls.js';
 
 class App{
 	constructor(){
+		alert ("ds");
 		const container = document.createElement( 'div' );
 		document.body.appendChild( container );
 		this.camera = new THREE.PerspectiveCamera (60, window.innerWidth/window.innerHeight,0.1,100);
