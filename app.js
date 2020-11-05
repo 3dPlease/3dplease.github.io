@@ -30,7 +30,8 @@ class App{
     }
     
 	render( ) {  
-        this.renderer.render (this.scene,this.camera);
+		this.renderer.render (this.scene,this.camera);
+		this.mesh.rotate (1.1);
     }
 }
 
