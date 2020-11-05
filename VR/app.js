@@ -1,9 +1,15 @@
-import * as THREE from '../../libs/three/three.module.js';
-import { VRButton } from '../../libs/three/jsm/VRButton.js';
-import { BoxLineGeometry } from '../../libs/three/jsm/BoxLineGeometry.js';
-import { Stats } from '../../libs/stats.module.js';
-import { OrbitControls } from '../../libs/three/jsm/OrbitControls.js';
+//import * as THREE from '../../libs/three/three.module.js';
+//import { VRButton } from './VRButton.js';
+//import { BoxLineGeometry } from '../../libs/three/jsm/BoxLineGeometry.js';
+//import { Stats } from '../../libs/stats.module.js';
+//import { OrbitControls } from '../../libs/three/jsm/OrbitControls.js';
 
+import * as THREE from '../libs/three/three.module.js';
+import { VRButton } from '../libs/three/jsm/VRButton.js';
+import { XRControllerModelFactory } from '../libs/three/jsm/XRControllerModelFactory.js';
+import { BoxLineGeometry } from '../libs/three/jsm/BoxLineGeometry.js';
+import { Stats } from '../libs/stats.module.js';
+import { OrbitControls } from '../libs/three/jsm/OrbitControls.js';
 
 class App{
 	constructor(){
@@ -36,7 +42,6 @@ class App{
         this.controls.update();
         
         this.stats = new Stats();
-        container.appendChild( this.stats.dom );
         
         this.initScene();
         this.setupVR();
@@ -77,8 +82,7 @@ class App{
     
     setupVR(){
         this.renderer.xr.enabled = true;
-        
-        document.body.appendChild( VRButton.createButton( this.renderer ) );
+        const button = new VRButton( this.renderer );
     }
     
     resize(){
