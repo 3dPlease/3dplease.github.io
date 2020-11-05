@@ -30,8 +30,9 @@ class App{
     }
     
 	render( ) {  
+		this.mesh.rotateY (0.01);
 		this.renderer.render (this.scene,this.camera);
-		this.mesh.rotate (1.1);
+	
     }
 }
 
