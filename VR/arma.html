@@ -52,7 +52,7 @@
     <div>
 
 
-        <model-viewer>
+        <model-viewer
             src="models/maar.gltf"
             ios-src="models/arma.usdz"
             alt='Light house'
@@ -61,7 +61,9 @@
             camera-controls
             poster="ma.png"
             reveal="interaction"
-            autoplay
+            autoplay>
+            <div id="lazy-load-poster" slot="poster"></div>
+            <div id="button-load" slot="poster">Load 3D Model</div>
         </model-viewer>
         </div>
 </body>
