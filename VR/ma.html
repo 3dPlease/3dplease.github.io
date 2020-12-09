@@ -14,9 +14,17 @@
         
         <body>
             AR Test
+            <script type="module"
+  src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js">
+</script>
+
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer-legacy.js">
+</script>
+
           <script src="js/scripts.js"></script>
           <model-viewer src="./maar.glb" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls
-    alt="A 3D model of an astronaut" skybox-image="./skybox.png" ios-src="./arma2.usdz"></model-viewer>
+    alt="A 3D model of an astronaut" skybox-image="../skybox.png" ios-src="./arma2.usdz"></model-viewer>
 
         </body>
         </html>
