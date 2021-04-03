@@ -74,7 +74,7 @@ infospot.addHoverText('A very lovely window seat');
 panorama.add( infospot );
 
 
-viewer = new PANOLENS.Viewer( { container: container } );
+viewer = new PANOLENS.Viewer( { container: container,   controlBar: true,cameraFov: 60 } );
 viewer.add( panorama );
 
 // Method to trigger control
