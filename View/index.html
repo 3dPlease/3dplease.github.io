@@ -66,7 +66,7 @@ controlButton = document.querySelector( '#controlButton' );
 modeButton = document.querySelector( '#modeButton' );
 videoButton = document.querySelector( '#videoButton' );
 
-panorama = new PANOLENS.ImagePanorama( 'https://3dplease.github.io/View/img/pano2.jpg' );
+panorama = new PANOLENS.ImagePanorama( 'https://3dplease.github.io/View/img/pano3.jpg' );
 
 infospot = new PANOLENS.Infospot( 350, PANOLENS.DataImage.Info );
 infospot.position.set( -200, -1800, -5000 );
@@ -74,7 +74,7 @@ infospot.addHoverText('A very lovely window seat');
 panorama.add( infospot );
 
 
-viewer = new PANOLENS.Viewer( { container: container,   controlBar: true,cameraFov: 60 } );
+viewer = new PANOLENS.Viewer( { container: container} );
 viewer.add( panorama );
 
 // Method to trigger control
