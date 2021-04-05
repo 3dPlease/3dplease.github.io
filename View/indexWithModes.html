@@ -78,7 +78,7 @@ viewer = new PANOLENS.Viewer( { container: container} );
 viewer.add( panorama );
 
 // Method to trigger control
-//controlButton.addEventListener( 'click', function(){
+controlButton.addEventListener( 'click', function(){
 
   controlIndex = controlIndex >= 1 ? 0 : controlIndex + 1;
   
@@ -92,7 +92,7 @@ viewer.add( panorama );
 
 } );
 
-//modeButton.addEventListener( 'click', function(){
+modeButton.addEventListener( 'click', function(){
   
   modeIndex = modeIndex >= 2 ? 0 : modeIndex + 1;
   
